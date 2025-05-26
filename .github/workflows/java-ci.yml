@@ -32,13 +32,13 @@ jobs:
         run: ./gradlew jacocoTestReport
 
       - name: Upload coverage report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@master
         with:
           name: coverage-report
           path: build/reports/jacoco/test/html/
 
       - name: Upload JAR artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@master
         with:
           name: application-jar
           path: build/libs/*.jar
