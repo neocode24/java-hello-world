@@ -15,7 +15,7 @@ jobs:
       - name: Delete old packages
         uses: actions/delete-package-versions@v3
         with:
-          package-name: neocode24
-          package-type: 'container'
+          owner: neocode24
+          package-name: 'java-hello-world'
           min-versions-to-keep: 10
           ignore-versions: '^(latest|stable|v[0-9]+)$'
